@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ProjectedRaisesGUI", "ProjectedRaisesGUI\ProjectedRaisesGUI.shproj", "{DBDE0DC7-78C0-425F-A7BF-66BEADE5F24F}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ProjectedRaisesGUI\ProjectedRaisesGUI.projitems*{dbde0dc7-78c0-425f-a7bf-66beade5f24f}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B233751E-9474-4ABB-B7B1-4AE9A9490475}
+	EndGlobalSection
+EndGlobal
