@@ -37,6 +37,11 @@
             this.txtNameInput = new System.Windows.Forms.TextBox();
             this.lblFirstAndLast = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.lblGrossPayOutput = new System.Windows.Forms.Label();
+            this.lblFederalWithholdingOutput = new System.Windows.Forms.Label();
+            this.lblStateWithholdingOutput = new System.Windows.Forms.Label();
+            this.lblNetPayOutput = new System.Windows.Forms.Label();
+            this.lblNameAndSSNOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSSN
@@ -113,11 +118,66 @@
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
+            // lblGrossPayOutput
+            // 
+            this.lblGrossPayOutput.AutoSize = true;
+            this.lblGrossPayOutput.Location = new System.Drawing.Point(79, 299);
+            this.lblGrossPayOutput.Name = "lblGrossPayOutput";
+            this.lblGrossPayOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblGrossPayOutput.TabIndex = 9;
+            this.lblGrossPayOutput.Text = "label1";
+            this.lblGrossPayOutput.Visible = false;
+            // 
+            // lblFederalWithholdingOutput
+            // 
+            this.lblFederalWithholdingOutput.AutoSize = true;
+            this.lblFederalWithholdingOutput.Location = new System.Drawing.Point(79, 333);
+            this.lblFederalWithholdingOutput.Name = "lblFederalWithholdingOutput";
+            this.lblFederalWithholdingOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblFederalWithholdingOutput.TabIndex = 10;
+            this.lblFederalWithholdingOutput.Text = "label2";
+            this.lblFederalWithholdingOutput.Visible = false;
+            // 
+            // lblStateWithholdingOutput
+            // 
+            this.lblStateWithholdingOutput.AutoSize = true;
+            this.lblStateWithholdingOutput.Location = new System.Drawing.Point(79, 364);
+            this.lblStateWithholdingOutput.Name = "lblStateWithholdingOutput";
+            this.lblStateWithholdingOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblStateWithholdingOutput.TabIndex = 11;
+            this.lblStateWithholdingOutput.Text = "label3";
+            this.lblStateWithholdingOutput.Visible = false;
+            // 
+            // lblNetPayOutput
+            // 
+            this.lblNetPayOutput.AutoSize = true;
+            this.lblNetPayOutput.Location = new System.Drawing.Point(79, 396);
+            this.lblNetPayOutput.Name = "lblNetPayOutput";
+            this.lblNetPayOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblNetPayOutput.TabIndex = 12;
+            this.lblNetPayOutput.Text = "label4";
+            this.lblNetPayOutput.Visible = false;
+            // 
+            // lblNameAndSSNOutput
+            // 
+            this.lblNameAndSSNOutput.AutoSize = true;
+            this.lblNameAndSSNOutput.Location = new System.Drawing.Point(79, 270);
+            this.lblNameAndSSNOutput.Name = "lblNameAndSSNOutput";
+            this.lblNameAndSSNOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblNameAndSSNOutput.TabIndex = 13;
+            this.lblNameAndSSNOutput.Text = "label5";
+            this.lblNameAndSSNOutput.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNameAndSSNOutput);
+            this.Controls.Add(this.lblNetPayOutput);
+            this.Controls.Add(this.lblStateWithholdingOutput);
+            this.Controls.Add(this.lblFederalWithholdingOutput);
+            this.Controls.Add(this.lblGrossPayOutput);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.lblFirstAndLast);
             this.Controls.Add(this.txtNameInput);
@@ -145,6 +205,11 @@
         private System.Windows.Forms.TextBox txtNameInput;
         private System.Windows.Forms.Label lblFirstAndLast;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Label lblGrossPayOutput;
+        private System.Windows.Forms.Label lblFederalWithholdingOutput;
+        private System.Windows.Forms.Label lblStateWithholdingOutput;
+        private System.Windows.Forms.Label lblNetPayOutput;
+        private System.Windows.Forms.Label lblNameAndSSNOutput;
     }
 }
 

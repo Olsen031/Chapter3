@@ -21,13 +21,37 @@ namespace PayrollGUI
         {
             string name, socialSecurityNumber;
             double wage;
-            int hoursWorked;
-            double stateWithholding = 0.05;
-            double federalWithholding = 0.15;
+            double hoursWorked;
+            double stateWithholding;
+            double federalWithholding;
             double grossPay;
             double netPay;
 
-            name = Convert.ToString(txtNameInput);
+            name = Convert.ToString(txtNameInput.Text);
+            socialSecurityNumber = Convert.ToString(txtSSNInput.Text);
+
+            wage = Convert.ToDouble(txtHourlyWageInput.Text);
+            hoursWorked = Convert.ToDouble(txtHoursWorkedInput.Text);
+
+            grossPay = wage * hoursWorked;
+            stateWithholding = 0.05 * grossPay;
+            federalWithholding = 0.15 * grossPay;
+            netPay = grossPay - stateWithholding - federalWithholding;
+
+            lblNameAndSSNOutput.Visible = true;
+            lblGrossPayOutput.Visible = true;
+            lblStateWithholdingOutput.Visible = true;
+            lblFederalWithholdingOutput.Visible = true;
+            lblNetPayOutput.Visible = true;
+
+            lblNameAndSSNOutput.Text = "Thank your for entering your information, " + name + ". Your SSN is " + socialSecurityNumber;
+            lblGrossPayOutput.Text = "Your gross pay before any taxes is: " + grossPay.ToString("C");
+            lblStateWithholdingOutput.Text = "Your State Withholding Tax will result in " + stateWithholding.ToString("C");
+            lblFederalWithholdingOutput.Text = "Your Federal Withholding Tax will result in " + federalWithholding.ToString("C");
+            lblNetPayOutput.Text = "Your total pay after taxes will be " + netPay.ToString("C");
+
+
+
 
                 
         }
